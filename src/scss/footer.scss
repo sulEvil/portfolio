@@ -1,3 +1,69 @@
 //====================================================================================================
+.footer {
+   // .footer__container
+   &__container {
+      padding: rem(56) rem(15);
+      text-align: center;
+      background-image: url('img/blocks/footer/background.png');
+      background-repeat: no-repeat;
+      background-position: right top;
+      @media (max-width: 720px){
+         background-position: center top;
+      }
+   }
+   // .footer__language
+   &__language {
+      text-align: right;
+      margin-bottom: rem(50);
+   }
+   // .footer__lang
+   &__lang {
+      text-transform: uppercase;
+      color: #8C96A0;
+      font-weight: 600;
+      & strong{
+         color: white;
+      }
+   }
+   // .footer__desc
+   &__desc {
+      margin-bottom: rem(52);
+      text-align: center;
+      color: #8C96A0;
+      font-size: rem(14);
+   }
+   // .footer__socials
+   &__socials {
+      display: flex;
+      justify-content: center;
+      gap: rem(16);
+      margin-bottom: rem(12);
+   }
+   // .footer__social
+   &__social {
+   }
+   &__link{
+      display: block;
+      width: rem(48);
+      height: rem(48);
+   }
+   &__img{
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+   }
+   // .footer__year
+   &__year {
+      margin-bottom: rem(13);
+   }
+   // .footer__copyright
+   &__copyright {
+      margin-bottom: rem(16);
+      color: #8C96A0;
+      & strong{
+         color: #8856D9;
+      }
+   }
+}
 
 //====================================================================================================

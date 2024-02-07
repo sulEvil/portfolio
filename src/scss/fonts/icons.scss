@@ -14,3 +14,94 @@
 		display: block;
 	}
 }
+._icon-arrow:before {
+	content: "\e900";
+	color: #fff;
+ }
+ ._icon-arrow__down:before {
+	content: "\e901";
+	color: #fff;
+ }
+ ._icon-facebook .path1:before {
+	content: "\e902";
+	color: rgb(51, 127, 255);
+ }
+ ._icon-facebook .path2:before {
+	content: "\e903";
+	margin-left: -1em;
+	color: rgb(255, 255, 255);
+ }
+ ._icon-github .path1:before {
+	content: "\e904";
+	color: rgb(51, 127, 255);
+ }
+ ._icon-github .path2:before {
+	content: "\e905";
+	margin-left: -1em;
+	color: rgb(255, 255, 255);
+ }
+ ._icon-vk .path1:before {
+	content: "\e906";
+	color: rgb(51, 127, 255);
+ }
+ ._icon-vk .path2:before {
+	content: "\e907";
+	margin-left: -1em;
+	color: rgb(255, 255, 255);
+ }
+ ._icon-css:before {
+	content: "\e908";
+	color: #f43059;
+ }
+ ._icon-git:before {
+	content: "\e909";
+	color: #f05032;
+ }
+ ._icon-github1:before {
+	content: "\e90a";
+ }
+ ._icon-gulp:before {
+	content: "\e90b";
+	color: #da4648;
+ }
+ ._icon-html5:before {
+	content: "\e90c";
+	color: #e34f26;
+ }
+ ._icon-javascript:before {
+	content: "\e90d";
+	color: #f7df1e;
+ }
+ ._icon-node-dot-js:before {
+	content: "\e90e";
+	color: #393;
+ }
+ ._icon-php:before {
+	content: "\e90f";
+	color: #777bb4;
+ }
+ ._icon-postgresql:before {
+	content: "\e910";
+	color: #336791;
+ }
+ ._icon-postman:before {
+	content: "\e911";
+	color: #ff6c37;
+ }
+ ._icon-react:before {
+	content: "\e912";
+	color: #61dafb;
+ }
+ ._icon-stackoverflow:before {
+	content: "\e913";
+	color: #fe7a16;
+ }
+ ._icon-typescript:before {
+	content: "\e914";
+	color: #007acc;
+ }
+ ._icon-vue-dot-js:before {
+	content: "\e915";
+	color: #4fc08d;
+ }
+ 

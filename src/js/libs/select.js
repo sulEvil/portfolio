@@ -151,7 +151,7 @@ class SelectConstructor {
 			}
 		}
 		// Конструктор основных элементов
-		selectItem.insertAdjacentHTML('beforeend', `<div class="${this.selectClasses.classSelectBody}"><div hidden class="${this.selectClasses.classSelectOptions}"></div></div>`);
+		selectItem.insertAdjacentHTML('beforeend', `<div class="${this.selectClasses.classSelectBody}"> <div hidden class="${this.selectClasses.classSelectOptions}"></div></div>`);
 		// Запускаем конструктор псевдоселекта
 		this.selectBuild(originalSelect);
 
@@ -294,7 +294,7 @@ class SelectConstructor {
 			// Если выбран элемент со своим классом
 			const customClass = this.getSelectedOptionsData(originalSelect).elements.length && this.getSelectedOptionsData(originalSelect).elements[0].dataset.class ? ` ${this.getSelectedOptionsData(originalSelect).elements[0].dataset.class}` : '';
 			// Выводим текстовое значение
-			return `<button type="button" class="${this.selectClasses.classSelectTitle}"><span${pseudoAttribute} class="${this.selectClasses.classSelectValue}${pseudoAttributeClass}"><span class="${this.selectClasses.classSelectContent}${customClass}">${selectTitleValue}</span></span></button>`;
+			return `<button type="button" class="${this.selectClasses.classSelectTitle}"><span${pseudoAttribute} class="${this.selectClasses.classSelectValue}${pseudoAttributeClass}"><span class="${this.selectClasses.classSelectContent}${customClass}">${selectTitleValue}<p class='select__arrow _icon-arrow__down'></p> </span> </span></button>`;
 		}
 	}
 	// Конструктор данных для значения заголовка

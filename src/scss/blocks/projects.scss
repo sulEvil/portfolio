@@ -1,0 +1,100 @@
+.projects {
+   margin-bottom: rem(64);
+   // .projects__container
+   &__container {
+   }
+   // .projects__title
+   &__title {
+      @include adaptiveValue("font-size", 40, 24, 1920, 320, 1);
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: rem(32);
+   }
+   // .projects__list
+   &__list {
+      display: flex;
+      row-gap: rem(32);
+      column-gap: rem(16);
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+   // .projects__item
+   &__item {
+   }
+}
+.project {
+   background: linear-gradient(180deg, #141615 0%, #1c2023 100%);
+   display: flex;
+   flex-direction: column;
+   border-radius: rem(6);
+   @include adaptiveValue("padding", 16, 8, 820, 320, 1);
+   @include adaptiveValue("max-width", 350, 280, 1920, 320, 1);
+   width: 100%;
+   // .project__image
+   &__image {
+      border-radius: 6px;
+      overflow: hidden;
+      margin-bottom: rem(20);
+   }
+   // .project__img
+   &__img {
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+   }
+   // .project__name
+   &__name {
+      text-align: center;
+      margin-bottom: rem(10);
+      font-size: rem(16);
+      font-weight: 600;
+   }
+   // .project__description
+   &__description {
+      text-align: center;
+      margin-bottom: rem(36);
+      color: #A9C7C7;
+      font-size: rem(16);
+      font-weight: 500;
+   }
+   // .project__tools
+   &__tools {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: rem(8);
+      margin-bottom: rem(32);
+   }
+   // .project__tool
+   &__tool {
+      @include adaptiveValue("font-size", 64, 28, 820, 320, 1);
+      cursor: pointer;
+   }
+   &__link {
+      align-self: end;
+      border-radius: 6px;
+      background: #8856D9;
+      padding: rem(12) rem(36);
+      color: #FFF;
+      font-size: rem(16);
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+      transition: all ease 0.25s;
+      &:hover{
+         cursor: pointer;
+         background: #8856d97c;
+      }
+   }
+   // ._icon-postgresql
+   & ._icon-postgresql {
+   }
+   // ._icon-react
+   & ._icon-react {
+   }
+   // ._icon-node-dot-js
+   & ._icon-node-dot-js {
+   }
+}
